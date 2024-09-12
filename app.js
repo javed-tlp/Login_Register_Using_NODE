@@ -33,7 +33,7 @@ console.log("Routes initialized");
 // Serve the main index.html file
 app.get('/', (req, res) => {
     console.log("GET request to / - Serving index.html");
-    res.sendFile(path.join(__dirname, '..', 'index.html'));
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 // Start the server
